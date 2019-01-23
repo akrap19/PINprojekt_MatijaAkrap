@@ -1,0 +1,48 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@inject SignInManager<IdentityUser> SignInManager
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+        <div>
+            <ul>
+                <a href="https://www.instagram.com/mr.babies/">
+                    <img border="0" alt="W3Schools" src="~/images/mr.babies.png" width="500" height="600">
+                </a>
+                <a href="https://www.instagram.com/alftown/">
+                    <img border="0" alt="W3Schools" src="~/images/awt.png" width="500" height="600">
+                </a>
+                <a href="https://www.instagram.com/idrawmazes/">
+                    <img border="0" alt="W3Schools" src="~/images/idraw.png" width="500" height="600">
+                </a>
+                <a href="https://www.instagram.com/ayla_antiques/">
+                    <img border="0" alt="W3Schools" src="~/images/komoda.png" width="500" height="600">
+                </a>
+                <a href="https://www.instagram.com/leafandpetaldesign/">
+                    <img border="0" alt="W3Schools" src="~/images/leafandpetaldesign.png" width="500" height="600">
+                </a>
+                <a href="https://www.instagram.com/the_real_theory/">
+                    <img border="0" alt="W3Schools" src="~/images/life_teory.png" width="500" height="600">
+                </a>
+                <a href="https://www.instagram.com/mmuheisen/">
+                    <img border="0" alt="W3Schools" src="~/images/sky.png" width="500" height="600">
+                </a>
+                <a href="https://www.instagram.com/zwart/">
+                    <img border="0" alt="W3Schools" src="~/images/car.png" width="500" height="600">
+                </a>
+                <a href="https://www.instagram.com/tiagomajuelos/">
+                    <img border="0" alt="W3Schools" src="~/images/thiago.png" width="500" height="600">
+                </a>
+                <a href="https://www.instagram.com/tyler_spangler/">
+                    <img border="0" alt="W3Schools" src="~/images/tyler_splanger.png" width="500" height="600">
+                </a>
+               </ul>
+        </div>
+    </div>
+    }
+
